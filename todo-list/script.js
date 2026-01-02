@@ -26,7 +26,7 @@ let todoList = [{
 
 let todoCount = todoList.length;
 
-function onToDoStatusChanged(checkBoxId, labelId) { //THis will we the line through the text code 
+function onToDoStatusChanged(checkBoxId, labelId) { //THis will be the line through the text code 
     let checkBoxElement = document.getElementById(checkBoxId);
     let labelElement = document.getElementById(labelId);
     labelElement.classList.toggle("checked");
@@ -117,4 +117,5 @@ function onAddTodo() { // Adding a todo
 let addTodoButton = document.getElementById("addTodoButton");
 addTodoButton.onclick = function() { // Adding an eventlistner for the todo 
     onAddTodo();
+
 };
